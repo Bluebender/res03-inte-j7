@@ -1,0 +1,17 @@
+@import "reset.scss";
+
+body > main > section{
+    height: 630px;
+    width: 1200px;
+    background-image: url("https://res03.sites.3wa.io/assets/files/inte/j7/starwarsdark.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    overflow: scroll;
+
+
+    > p{
+        color: yellow;
+        font-size: 5rem;
+        text-align: center;
+    }
+}
