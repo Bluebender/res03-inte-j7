@@ -96,7 +96,7 @@ body > header{
 body > main{
     padding: 40px;
     
-    > section:nth-of-type(1)
+    > section:nth-of-type(1){
     
         > section:nth-of-type(1){
             display: flex;
@@ -116,4 +116,118 @@ body > main{
             font-weight: bold;
             margin: 5px 0;
         }
+        > p:first-of-type{
+            background-color: mediumvioletred;
+            padding: 5px;
+            border-radius: 5px;
+            width: 80px;
+            height: 20px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+        > video{
+            width: 100%;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+    }
+    
+    > section:nth-of-type(2){
+        border: 1px solid grey;
+        border-radius: 10px;
+        padding: 20px;
+        
+        h3{
+           font-size: 2rem;
+           font-weight: bold;
+           margin: 20px 0;
+        }
+        h4{
+           font-size: 1.5rem;
+           margin: 20px 0;
+        }
+        p, ul{
+            color: grey;
+            font-size: 1.2rem;
+        }
+        ul:first-of-type{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            li, i{
+                font-size: 1.2rem;
+                margin: 5px 0;
+            }
+        }
+        ul:last-of-type{
+            li, i{
+                font-size: 1.2rem;
+                margin: 10px 0;
+                list-style: inside;
+            }
+        }
+    }
+    
+    > section:nth-of-type(3){
+        border: 1px solid grey;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 40px 0;
+        
+        h3{
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 20px 0;
+            }
+        h4{
+            background-color: lightblue;
+            margin: 10px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        section{
+            padding: 20px;
+            display:grid;
+            grid-template-columns: 0.02fr 1fr 0.1fr 0.1fr;
+        }
+    }
+    > section:nth-of-type(4){
+        border: 1px solid grey;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 40px 0;
+        h3{
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        >article{
+            display: grid;
+            grid-template-columns: 0.2fr 1fr;
+            > section{
+                h4{
+                    Font-size: 1.5rem;
+                    font-weight: bold;
+                    margin: 5px 0;
+                }
+                p:first-of-type{
+                    font-weight: lighter;
+                    margin: 5px 0;
+                }
+                p:nth-of-type(2){
+                    margin: 20px 0;
+                }
+                p:nth-of-type(3){
+                    margin: 20px 0;
+                }
+                ol{
+                    list-style-type: upper-roman;
+                    list-style: inside;
+                }
+            }
+        }
+    }
 }
